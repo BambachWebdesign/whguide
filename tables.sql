@@ -1,0 +1,17 @@
+CREATE TABLE wormholes (
+`ID` VARCHAR( 4)NOT NULL PRIMARY KEY,
+`target` VARCHAR( 20)NOT NULL ,
+`lifetime` VARCHAR( 2)NOT NULL ,
+`maxMass` VARCHAR( 10) NOT NULL ,
+`totalMass` VARCHAR ( 10) NOT NULL
+ ) ENGINE=MYISAM ;
+
+
+CREATE TABLE wh_systems (
+`ID` VARCHAR( 5)NOT NULL PRIMARY KEY,
+`system` INT( 10) NOT NULL ,
+`podKills` INT( 10) NOT NULL ,
+`shipKills` INT( 10) NOT NULL ,
+`npcKills` INT( 10) NOT NULL ,
+`jumps` INT( 10) NOT NULL
+ ) ENGINE=MYISAM ;

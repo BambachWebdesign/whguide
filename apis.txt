@@ -1,0 +1,5 @@
+http://wiki.eveonline.com/en/wiki/IGB_Headers
+
+http://wiki.eve-id.net/APIv2_Account_Characters_XML
+
+https://api.eveonline.com/eve/CharacterID.xml.aspx?names=j155928 -> system_name zu id0

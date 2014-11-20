@@ -1,0 +1,83 @@
+html, body {
+    background-color:#000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color:#FFF;
+    scrollbar-3dlight-color: #000;
+    scrollbar-arrow-color: #000;
+    scrollbar-base-color: #000;
+    scrollbar-darkshadow-color: #000;
+    scrollbar-face-color: #000;
+    scrollbar-highlight-color: #000;
+    scrollbar-shadow-color: #000;
+    scrollbar-track-color: #000;
+}
+div.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+div.logo_image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 75px;
+    height: 50px;
+    background-image: url(../images/logo_image.png);
+}
+div.logo_text {
+    position: absolute;
+    top: 12px;
+    left: 76px;
+    width: 221px;
+    height: 30px;
+    background-image: url(../images/logo_text.png)
+    
+}
+
+
+
+
+
+
+
+
+input.search_system {
+    position: absolute;
+    top:16px;
+    left:0px;
+    width:245px;
+    height:20px;
+    float:right;
+    display:inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ext
+{
+background-image: linear-gradient(bottom, rgb(16,16,16) 0%, rgb(96,96,96) 100%);
+background-image: -o-linear-gradient(bottom, rgb(16,16,16) 0%, rgb(96,96,96) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(16,16,16) 0%, rgb(96,96,96) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(16,16,16) 0%, rgb(96,96,96) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(16,16,16) 0%, rgb(96,96,96) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(16,16,16)),
+	color-stop(1, rgb(96,96,96))
+);
+}

@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/exporting.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/highcharts.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/gray.js"></script>
+<script language="javascript" type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'area'
+            },
+            title: {
+                text: 'Stats for Jita'
+            },
+            xAxis: {
+                type: 'datetime',
+                maxZoom: 24 * 3600000, // fourteen days
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Kills'
+                }
+            },
+            tooltip: {
+                shared: true
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                type: 'area',
+                name: 'NPC Kills',
+                pointInterval: 3600000,
+                pointStart: Date.UTC(2013, 4, 23),
+                data: [123,2,142,23,242,52,14,534,23,67,89,124,234,50,41,23,15,8,345,256,123,70,345,23]
+            }]
+        });
+    });
+</script>
+<title>Test</title></head>    
+<body>
+<div id="container" style="width: 400px; height: 250px; margin: 0 auto"></div>
+</body>
+</html>    
+    
+    

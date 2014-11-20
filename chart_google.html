@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+            <script type="text/javascript">
+                var npc="1";
+                var ship="1";
+                var pod="1"
+                google.load("visualization", "1", {packages:["corechart"]});
+                google.setOnLoadCallback(drawChart);
+                function drawChart() {
+                    var dataTable = new google.visualization.DataTable();
+      dataTable.addColumn('datetime', 'Datum');
+      
+      if(npc=="1"){dataTable.addColumn('number', 'NPC Kills','npc');}
+      if(npc=="1"){dataTable.addColumn('number', 'Ship Kills','ship');}
+      if(npc=="1"){dataTable.addColumn('number', 'POD Kills','pod');}
+      dataTable.addRows([
+        [new Date(1366722602*1000), 1, 23, 9],
+        [new Date(1366726203*1000), 2, 66, 17],
+        [new Date(1366729803*1000), 12, 12, 1],
+        [new Date(1366733402*1000), 22, 100, 31],
+        [new Date(1366737003*1000), 30, 4, 0]
+      ]);
+
+      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+      var options = {
+            width: 500, height: 280,
+            pointSize: 5,
+            hAxis: {
+                    format:'H', 
+                    textStyle:{
+                        color:'#FFF'
+                    }
+            },
+            backgroundColor:{fill:'#000',stroke:'#FFF',strokeWidth:'1'}, 
+            title:'Stats for xxxxxx',
+            titleTextStyle: {
+                color: '#FFF'
+                },
+            legend: {
+                textStyle:{
+                    color:'#FFF'
+                }    
+            },
+            colors: ['#00BBFF', '#FFFF00', '#FF0000']
+        }
+      chart.draw(dataTable, options)  
+      };
+      
+      
+       function change_label(){
+            npc="0";
+            ship="1";
+            pod="1";
+            drawChart();            
+            }         
+            </script>
+  </head>
+  <body style="background-color: #000000;">
+    <div id="chart_div"></div>
+    <div style="position:absolute; top:0px; right:100px; width:50px; height:50px;background-color:#FF0000;" onclick="change_label()"></div>
+  </body>
+</html>
